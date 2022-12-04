@@ -24,3 +24,9 @@ echo 'source ~/.p10k.zsh' >>~/.zshrc
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 echo . $HOME/.asdf/asdf.sh >>~/.zshrc
+
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf install nodejs 14.21.1
+asdf install nodejs 18.12.1
+asdf global nodejs 18.12.1
+npm -g install yarn
