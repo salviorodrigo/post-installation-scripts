@@ -21,3 +21,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 cp "$(pwd)/${0%/*}/.p10k.zsh" ~/.p10k.zsh
 echo 'source ~/.p10k.zsh' >>~/.zshrc
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+echo . $HOME/.asdf/asdf.sh >>~/.zshrc
