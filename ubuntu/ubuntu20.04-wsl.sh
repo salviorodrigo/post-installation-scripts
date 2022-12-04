@@ -17,6 +17,11 @@ sudo apt install ${pacotes[@]} -y
 sudo usermod -aG docker $USER
 sudo chsh -s $(which zsh)
 
+mkdir -p ~/.docker/cli-plugins
+curl -sSL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+chmod +x ~/.docker/cli-plugins/docker-compose
+echo "alias docker-compose=\"docker compose\"" >>~/.zshrc
+
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 cp "$(pwd)/${0%/*}/.p10k.zsh" ~/.p10k.zsh
