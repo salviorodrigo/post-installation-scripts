@@ -39,3 +39,6 @@ npm -g install yarn
 asdf plugin-add php https://github.com/asdf-community/asdf-php.git
 asdf install nodejs 8.1.13
 asdf global php 8.1.13
+
+git config --global user.name "Rodrigo Salvio"
+git config --global user.email "rodrigosalvio@hotmail.com"
