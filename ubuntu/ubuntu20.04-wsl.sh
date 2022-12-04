@@ -35,3 +35,7 @@ asdf install nodejs 14.21.1
 asdf install nodejs 18.12.1
 asdf global nodejs 18.12.1
 npm -g install yarn
+
+asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+asdf install nodejs 8.1.13
+asdf global php 8.1.13
