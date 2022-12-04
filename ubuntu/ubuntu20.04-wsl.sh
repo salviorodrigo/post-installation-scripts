@@ -15,7 +15,7 @@ sudo apt install ${libs[@]} -y
 sudo apt install ${pacotes[@]} -y
 
 sudo usermod -aG docker $USER
-sudo chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $USER
 
 mkdir -p ~/.docker/cli-plugins
 curl -sSL https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
