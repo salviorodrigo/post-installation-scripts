@@ -30,15 +30,17 @@ echo 'source ~/.p10k.zsh' >>~/.zshrc
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 echo . $HOME/.asdf/asdf.sh >>~/.zshrc
 
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs 14.21.1
-asdf install nodejs 18.12.1
-asdf global nodejs 18.12.1
+$HOME/.asdf/asdf.sh asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+$HOME/.asdf/asdf.sh asdf install nodejs 14.21.1
+$HOME/.asdf/asdf.sh asdf install nodejs 18.12.1
+$HOME/.asdf/asdf.sh asdf global nodejs 18.12.1
 npm -g install yarn
 
-asdf plugin-add php https://github.com/asdf-community/asdf-php.git
-asdf install nodejs 8.1.13
-asdf global php 8.1.13
+$HOME/.asdf/asdf.sh asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+$HOME/.asdf/asdf.sh asdf install php 8.1.13
+$HOME/.asdf/asdf.sh asdf global php 8.1.13
 
 git config --global user.name "Rodrigo Salvio"
 git config --global user.email "rodrigosalvio@hotmail.com"
+
+ssh-keygen
